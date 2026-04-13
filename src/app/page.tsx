@@ -1,6 +1,7 @@
  "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
   ArrowRight,
   BadgeCheck,
@@ -151,7 +152,9 @@ export default function Home() {
             pathways for tomorrow.
           </p>
           <div className="mt-8 flex justify-center">
-            <FeyButton>Create Your Organ Vault Profile</FeyButton>
+            <Link href="/for-patients">
+              <FeyButton>Create Your Organ Vault Profile</FeyButton>
+            </Link>
           </div>
         </div>
       </section>
@@ -178,7 +181,31 @@ export default function Home() {
               <h4 className="font-medium text-white">{group[0]}</h4>
               <ul className="mt-3 space-y-2 text-sm text-zinc-400">
                 {group.slice(1).map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item}>
+                    <Link
+                      href={
+                        item === "Organ Vault"
+                          ? "/products"
+                          : item === "AI BioCompiler"
+                            ? "/products"
+                            : item === "Design Engine"
+                              ? "/products"
+                              : item === "About"
+                                ? "/about"
+                                : item === "Research"
+                                  ? "/technology"
+                                  : item === "Privacy"
+                                    ? "/about"
+                                    : item === "Terms"
+                                      ? "/about"
+                                      : item === "Security"
+                                        ? "/products"
+                                        : "#"
+                      }
+                    >
+                      {item}
+                    </Link>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -186,7 +213,9 @@ export default function Home() {
           <div>
             <h4 className="font-medium text-white">Contact</h4>
             <ul className="mt-3 space-y-2 text-sm text-zinc-400">
-              <li>hello@zyogen.in</li>
+              <li>
+                <a href="mailto:hello@zyogen.in">hello@zyogen.in</a>
+              </li>
               <li>Bengaluru, India</li>
               <li>LinkedIn / X / YouTube</li>
             </ul>
