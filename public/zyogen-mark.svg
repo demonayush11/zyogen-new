@@ -1,0 +1,13 @@
+<svg width="240" height="56" viewBox="0 0 240 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="52" height="52" rx="14" fill="#0A0A0A" stroke="#1F2937"/>
+  <path d="M15 18H41L27 32H41V38H15L29 24H15V18Z" fill="url(#g1)"/>
+  <path d="M27 12C33 16 35 20 35 28C35 36 33 40 27 44C21 40 19 36 19 28C19 20 21 16 27 12Z" stroke="#22D3EE" stroke-opacity="0.75"/>
+  <text x="68" y="30" fill="#E5E7EB" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="2">ZYOGEN</text>
+  <text x="69" y="44" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="9" letter-spacing="1.8">BIOPRINTING " AI " GENOMICS</text>
+  <defs>
+    <linearGradient id="g1" x1="15" y1="18" x2="41" y2="38" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+</svg>
